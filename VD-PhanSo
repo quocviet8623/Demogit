@@ -1,0 +1,28 @@
+public class PhanSo {
+    private int tu; // thuộc tính 
+    private int mau;
+/* Phương thức lấy và gắn giá trị cho cac thuộc thính 
+public int getTu(){
+    return this.tu;
+ }
+ public void getMau(){
+     return this.mau;;
+ }
+ public void setMau(int mau){
+    this.mau = mau;
+ }
+
+ */   
+}
+
+    // Phuong thức hiển thị 
+    public void hienThi(){
+        system.out.println(this.tu +"/"+ this.mau);
+    }                                                            // một lớp gồm 2 thành phần
+    // Phuong thức cộng hai phân số 1/2+ 2/3 = (1*3+2*3)/ 2/3
+    public PhanSo cong(PhanSo p){
+        PhanSo kq = new PhanSo();
+        kq.tu = (this.tu*p.mau+this.mau*p.tu);
+        return kq;
+    }
+}
